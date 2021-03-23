@@ -4,38 +4,38 @@ banner:
   content: >
     <div class="container container--no-padding">
       <div class="width width--xxl text--center">
-        <h1 class="h h--xxxl">{{page.long-title}}</h1>
+        <h1 class="h h--xxl">{{page.long-title}}</h1>
         <div class="space--sm"></div>
         <a href="#entry-form" class="btn btn--lg btn--orange">{{page.enter-cta}}</a>
       </div>
     </div>
 ---
 
-<div class="bg--light">
-  <div class="container">
-    <div class="space--xxl"></div>
+<div class="bg--grey-lightest">
+  <div class="container vpad--xxxl">
     <div class="width width--xl text--center">
-      <p class="p--xxl">{{page.intro}}</p>
+      <p class="p--xxl">{{site.description}}</p>
     </div>
-    <div class="space--xl"></div>
-    <div class="row row--constant-4-4-4 row--gutters-sm">
-      <div class="col">
-        <div class="img img--1-1 img--lg-4-3 img--xxl-3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </div>
-      <div class="col">
-        <div class="img img--1-1 img--lg-4-3 img--xxl-3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </div>
-      <div class="col">
-        <div class="img img--1-1 img--lg-4-3 img--xxl-3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </div>
+    <div class="space--xxxl">
+      {% for item in page.features %}
+        <div class="bob{% cycle '', ' bob--swap' %}">
+          <div class="bob__img">
+            <div class="img img--3-2" style="background-image: url('{{site.img}}/pages/{{item.id}}.jpg');"></div>
+          </div>
+          <div class="bob__text">
+            <h2 class="h h--md">{{item.title}}</h2>
+            <p class="p--xl">{{item.description}}</p>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-    <div class="space--xxl"></div>
   </div>
 </div>
 
-<div class="vpad--xl">
+<div class="vpad--xxxl">
   <div class="container">
-    <div id="entry-form" class="vpad--md">
+    <p class="h h--xs text--center width width--md">For your chance to win, simply enter your details here:</p>
+    <div id="entry-form" class="vpad--lg">
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
         {% include form/messages.html %}
@@ -58,9 +58,13 @@ banner:
               {% endcase %}
             </div>
           {% endfor %}
-          <div class="space--sm"></div>
-          <p class="text--sm text--normal">{{form.terms}}</p>
-          <div class="space--sm"></div>
+          {% if form.terms %}
+            <div class="space--sm"></div>
+            <p class="text--sm text--normal">{{form.terms}}</p>
+            <div class="space--sm"></div>
+          {% else %}
+            <div class="space--lg"></div>
+          {% endif %}
           <button type="submit" class="btn" disabled>{{form.submit}}</button>
         </div>
       </form>
