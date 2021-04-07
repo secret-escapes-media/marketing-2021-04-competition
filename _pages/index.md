@@ -31,21 +31,21 @@ competition-form:
       required: true
     - id: email
       type: email
-      label: Email
+      label: E-Mail
       required: true
     - id: qualify
       type: radio
-      label: Are you a UK resident and over the age of 18?
+      label: Sind Sie deutscher Staatsbürger und über 21 Jahre alt?
       required: true
       options:
         - id: qualify-true
-          label: "Yes"
+          label: "Ja"
           value: "yes"
         - id: qualify-false
-          label: "No"
+          label: "Nein"
           value: "no"
           invalid: true
-  submit: Submit Entry
+  submit: Absenden
   terms: >
-    By submitting your entry, you agree to the <a href="#" class="js-open-modal text--link" data-open-modal="competition-terms">terms and conditions</a> of this competition
+    Wenn Sie Ihre Daten einsenden, erklären Sie sich gleichzeitig mit <a href="#" class="js-open-modal text--link" data-open-modal="competition-terms">unseren AGB zum Gewinnspiel</a> einverstanden.
 ---

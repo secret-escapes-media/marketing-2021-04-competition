@@ -10,8 +10,8 @@ var competitionForm = (function functionName() { // IIFE to control scope of for
     statusMessages: [
       {
         'id': 'expired',
-        'title': 'Competition closed',
-        'description' : 'This competition is not running and we are no longer accepting new entries.'
+        'title': 'Das Gewinnspiel ist bereits abgeschlossen',
+        'description' : 'Dieses Gewinnspiel ist bereits abgelaufen und wir können keine weiteren Teilnehmer berücksichtigen.'
       }
     ],
   };

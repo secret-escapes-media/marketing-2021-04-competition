@@ -6,12 +6,12 @@ var formValidation = (function functionName(form) {
   var inputErrorClass = 'has-error';
   var inputErrorMessageClass = 'input__error-message';
   var errorMessages = {
-    'text': 'Please fill in',
+    'text': 'Bitte ausfüllen',
     'email': {
-      'blank': 'Please enter your email address',
-      'wrong': 'Please enter a valid email address'
+      'blank': 'Bitte tragen Sie hier Ihre E-Mail-Adresse ein',
+      'wrong': 'Bitte tragen Sie hier eine gültige E-Mail-Adresse ein'
     },
-    'radio': 'Please select an answer for this question',
+    'radio': 'Bitte wählen Sie eine Antwort aus',
     'checkbox': 'Please select an answer for this question',
     'select': 'Please select an option from this list',
     'textarea': 'Please fill in a response over 100 characters',
