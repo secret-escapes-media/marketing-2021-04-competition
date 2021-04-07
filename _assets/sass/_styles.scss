@@ -1,1 +1,35 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.img {
+  &--style {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    border: 6px solid #fff;
+  }
+  &--01 {
+    z-index: 3;
+    transform: rotate(2.5deg);
+    @include bp($sm) {
+      margin-left: 6%;
+      transform: rotate(5deg);
+    }
+  }
+  &--02 {
+    z-index: 2;
+    transform: rotate(-2.5deg);
+    margin-top: -2%;
+    @include bp($sm) {
+      margin-top: 6%;
+      margin-left: -3%;
+      margin-right: 1%;
+      transform: rotate(-5deg);
+    }
+  }
+  &--03 {
+    z-index: 1;
+    margin-top: -4%;
+    @include bp($sm) {
+      margin-left: 3%;
+      margin-top: -10%;
+    }
+  }
+}
