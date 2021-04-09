@@ -4,8 +4,8 @@ id: entered
 permalink: /entered/
 nav: false
 
-title: Thank you for entering
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, natus modi accusamus debitis assumenda magnam quo voluptatum quaerat nemo maiores molestiae soluta blanditiis amet in omnis harum, est! Consequatur, nesciunt.
+title: Danke für die Teilnahme
+intro: Sie haben erfolgreich an der Auslosung teilgenommen. Die glücklichen Gewinner werden von uns direkt benachrichtigt. Viel Glück!
 cta:
   text: See Current Sales
 ---

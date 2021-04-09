@@ -4,7 +4,7 @@ banner:
   content: >
     <div class="container container--no-padding">
       <div class="width width--xxl text--center">
-        <h1 class="h h--xxl">{{page.long-title}}</h1>
+        <h1 class="h h--xxl">{{page.title}}</h1>
         <div class="space--sm"></div>
         <a href="#entry-form" class="btn btn--lg btn--orange">{{page.enter-cta}}</a>
       </div>
@@ -13,7 +13,8 @@ banner:
 
 <div class="bg--grey-lightest">
   <div class="container vpad--xxxl">
-    <div class="width width--xl text--center">
+    <div class="width width--lg text--center">
+      <h2 class="h h--md">{{page.intro-title}}</h2>
       <p class="p--xxl">{{site.description}}</p>
     </div>
     <div class="space--xxxl">
@@ -31,7 +32,7 @@ banner:
             <div class="img img--21-9 img--style img--03" style="background-image: url('{{site.img}}/pages/{{item.id}}.jpg');"></div>
           </div>
           <div class="bob__text">
-            <h2 class="h h--md">{{item.title}}</h2>
+            <h2 class="h h--sm">{{item.title}}</h2>
             <p class="p--xl">{{item.description}}</p>
           </div>
         </div>
@@ -42,7 +43,7 @@ banner:
 
 <div class="vpad--xxxl">
   <div class="container">
-    <p class="h h--xs text--center width width--md">For your chance to win, simply enter your details here:</p>
+    <p class="h h--xs text--center width width--md">Um am Gewinnspiel teilzunehmen, geben Sie bitte Ihre persönlichen Daten ein:</p>
     <div id="entry-form" class="vpad--lg">
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
