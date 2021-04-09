@@ -22,7 +22,7 @@ function cleanAssets() {
 
 // start browserSync local server - show under site subdirectory
 const browserSyncServe = () => {
-  const baseurl = "/_templates/site";
+  const baseurl = "/uk/2021/competition";
   browserSync.init({
     baseDir: "_site/",
     ui: false,
