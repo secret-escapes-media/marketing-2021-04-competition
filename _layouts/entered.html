@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include page/head.html %}
 
   <body class="no-js">
-
     {% include components/tracking.html %}
 
     <div class="container">
@@ -12,11 +10,33 @@
         <h1 class="h h--lg">{{page.title}}</h1>
         <div class="space--xxs"></div>
         <p class="p--xxl">{{page.intro}}</p>
-        <div class="space--md"></div>
-        <a href="{{site.data.locale[site.locale].core-site}}" class="btn btn--orange">{{page.cta.text}}</a>
       </div>
     </div>
-
+    <div>
+      <div class="container container--xl">
+        <h2 class="h h--xs text--center width" style="max-width: 30rem">
+          Suggestions for your next trip can be found in some of our
+          collections:
+        </h2>
+        <div class="space--lg"></div>
+        <div class="row row--md-6-6">
+          {% for item in page.collection %}
+          <div class="col">
+            <div
+              class="img img--1-1 rounded rounded--lg bg--grey-dark"
+              style="background-image: url('{{site.img}}/collections/{{item.id}}.jpg');"
+            >
+              <a href="{{item.link}}" class="img__link"></a>
+              <div class="img__content">
+                <h3 class="h h--md">{{item.title}}</h3>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="space--xxxl"></div>
+    <div class="space--xl"></div>
   </body>
-
 </html>
