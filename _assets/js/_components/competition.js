@@ -1,19 +1,22 @@
 ////////////////////////////////////////////////////////////////////////////////
 //    Competition form
 ////////////////////////////////////////////////////////////////////////////////
-var competitionForm = (function functionName() { // IIFE to control scope of form code
+var competitionForm = (function functionName() {
+  // IIFE to control scope of form code
 
   var form = {
-    element: $('.competition-form'),
-    inputClass: 'js-form-input',
-    isOnPage: function () { return this.element.length > 0; },
+    element: $(".competition-form"),
+    inputClass: "js-form-input",
+    isOnPage: function () {
+      return this.element.length > 0;
+    },
     statusMessages: [
       {
-        'id': 'expired',
-        'title': 'Das Gewinnspiel ist bereits abgeschlossen',
-        'description' : 'Dieses Gewinnspiel ist bereits abgelaufen und wir können keine weiteren Teilnehmer berücksichtigen.'
+        id: "expired",
+        title:
+          "Danke für Ihr Interesse. Die Verlosung ist nun zu Ende; die Gewinner werden direkt benachrichtigt."
       }
-    ],
+    ]
   };
 
   // is the competition form on the page?
@@ -22,12 +25,13 @@ var competitionForm = (function functionName() { // IIFE to control scope of for
     formFunctions(form).init();
     // has the competition expired?
     var currentDate = new Date();
-    var expiredDate = new Date(form.element.data('expires'));
-    if (currentDate > expiredDate) { // has today's day passed the expired date
-      formFunctions(form).showMessage('expired'); // show expired competition message
+    var expiredDate = new Date(form.element.data("expires"));
+    if (currentDate > expiredDate) {
+      // has today's day passed the expired date
+      formFunctions(form).showMessage("expired"); // show expired competition message
     }
     // submit form function
-    form.element.submit(function(e){
+    form.element.submit(function (e) {
       if (formValidation(form).isValid()) {
         formFunctions(form).submissionInProgress();
       } else {
@@ -36,5 +40,4 @@ var competitionForm = (function functionName() { // IIFE to control scope of for
       }
     });
   }
-
-}());
+})();

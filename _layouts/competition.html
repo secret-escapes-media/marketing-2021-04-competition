@@ -43,12 +43,13 @@ banner:
 
 <div class="vpad--xxxl">
   <div class="container">
-    <p class="h h--xs text--center width width--md">Um am Gewinnspiel teilzunehmen, geben Sie bitte Ihre persönlichen Daten ein:</p>
-    <div id="entry-form" class="vpad--lg">
+    <div id="entry-form">
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
         {% include form/messages.html %}
         <div class="form__content width width--md">
+          <p class="h h--xs text--center width width--md">Um am Gewinnspiel teilzunehmen, geben Sie bitte Ihre persönlichen Daten ein:</p>
+          <div class="space--lg"></div>
           {% for item in form.fields %}
             <div class="form__input js-form-input">
               {% case item.type %}

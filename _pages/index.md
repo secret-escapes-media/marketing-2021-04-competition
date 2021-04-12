@@ -36,6 +36,13 @@ competition-form:
       type: email
       label: E-Mail
       required: true
+    - id: newsletter
+      type: checkbox
+      label: Secret Escapes Limited würde Sie gerne über andere Angebote, Aktionen und Dienstleistungen informieren, die Sie interessieren könnten. Bitte geben Sie an, falls Sie unseren Newsletter erhalten möchten. Für weitere Informationen können Sie unsere Datenschutz- und Cookie-Richtlinie konsultieren
+      options:
+        - id: newsletter-yes
+          label: "Ja"
+          value: "yes"
     - id: qualify
       type: radio
       label: Sind Sie deutscher Staatsbürger und über 21 Jahre alt?
