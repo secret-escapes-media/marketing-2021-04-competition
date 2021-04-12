@@ -44,8 +44,32 @@ banner:
     <div class="width width--lg text--center">
       <p class="p--xxl">{{page.end-section}}</p>
       <div class="space--sm"></div>
-      <a href="{{site.data.locale.[site.locale].core-site}}" class="btn btn--lg btn--orange">Browse Deals</a>
+      <a href="{{site.data.locale[site.locale].core-site}}" class="btn btn--lg btn--orange">Browse Deals</a>
       <p class="p--sm"><a href="#" class="js-open-modal text--link" data-open-modal="competition-terms">T&Cs apply</a></p>
+    </div>
+  </div>
+  <div class="space--xxl"></div>
+  <div>
+    <div class="container container--lg">
+      <h2 class="h h--xxs text--center width" style="max-width: 32rem">
+        For inspiration on your next trip, browse our collections of amazing refundable deals below.
+      </h2>
+      <div class="space--lg"></div>
+      <div class="row row--md-6-6">
+        {% for item in page.collection %}
+        <div class="col">
+          <div
+            class="img img--1-1 rounded rounded--lg bg--grey-dark"
+            style="background-image: url('{{site.img}}/collections/{{item.id}}.jpg');"
+          >
+            <a href="{{item.link}}" class="img__link"></a>
+            <div class="img__content">
+              <h3 class="h h--sm">{{item.title}}</h3>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

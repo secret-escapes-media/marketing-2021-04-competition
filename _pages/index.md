@@ -26,4 +26,18 @@ features:
     description: Will you be lucky enough to win a 3-night stay at this boutique hotel in the picturesque Provence? If you can tear yourself away from the sublime views overlooking the Luberon Valley, you'll be met with Michelin-star dining options, a blissful spa and hammam, cinema room and outdoor pool.
 
 end-section: For your chance to win one of these incredible holidays, simply book any Secret Escapes deal between April 8th - May 8th and you will automatically be entered into the draw. The four lucky winners will be contacted directly after the competition has ended to find out which prize they have won. Good luck!
+
+collection:
+  - id: spa-getaways
+    title: Spa getaways
+    link: https://www.secretescapes.com/spa/filter
+  - id: magical-islands
+    title: Magical islands
+    link: https://www.secretescapes.com/magical-island-stays/filter
+  - id: mediterranean-sun
+    title: Mediterranean Sun
+    link: https://www.secretescapes.com/our-best-mediterranean-deals/filter
+  - id: great-british-breaks
+    title: Great British Breaks
+    link: https://www.secretescapes.com/great-british-breaks/filter
 ---
