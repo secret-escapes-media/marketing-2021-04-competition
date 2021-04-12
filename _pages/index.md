@@ -25,7 +25,7 @@ features:
 
 competition-form:
   id: comp
-  post-url: "#getFormUrl"
+  post-url: https://dislack.com/send/60741b2ea339896a2c5bac94
   expiry-date: 2050-01-01
   fields:
     - id: name
