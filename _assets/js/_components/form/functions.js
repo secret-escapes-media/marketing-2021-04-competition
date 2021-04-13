@@ -1,23 +1,22 @@
-var formFunctions = (function functionName(form) {
-
+var formFunctions = function functionName(form) {
   //////////////////////////////////////////////////////////// private functions
 
   // add specifc status messages for this form
   function formAddStatusMessages() {
-    var formMessagesClass = 'js-form-messages';
-    var formMessagesElement = $(form.element).find('.'+formMessagesClass);
+    var formMessagesClass = "js-form-messages";
+    var formMessagesElement = $(form.element).find("." + formMessagesClass);
     // loop through all messages and make html element
     for (var i = 0; i < form.statusMessages.length; i++) {
       // create elements
-      var container = document.createElement('div');
-      var wrap = document.createElement('div');
-      var title = document.createElement('h3');
-      var description = document.createElement('p');
+      var container = document.createElement("div");
+      var wrap = document.createElement("div");
+      var title = document.createElement("h3");
+      var description = document.createElement("p");
       // add classes
-      container.className = 'message message--' + form.statusMessages[i].id;
-      wrap.className = 'width width--md';
-      title.className = 'h h--sm';
-      description.className = 'p--lg p--normal';
+      container.className = "message message--" + form.statusMessages[i].id;
+      wrap.className = "width width--md";
+      title.className = "h h--sm";
+      description.className = "p--lg p--normal";
       // add content
       title.textContent = form.statusMessages[i].title;
       description.textContent = form.statusMessages[i].description;
@@ -84,16 +83,19 @@ var formFunctions = (function functionName(form) {
       });
   }
 
-
   ///////////////////////////////////////////////////////////// public functions
 
   function submissionInProgress() {
-    form.element.find('button').prop("disabled", true).addClass('is-loading').html('Sending <div class="loading-icon"></div>');
+    form.element
+      .find("button")
+      .prop("disabled", true)
+      .addClass("is-loading")
+      .html('Sending <div class="loading-icon"></div>');
   }
 
   function formInit() {
     // setting up the form
-    form.element.trigger('reset'); // reset form values
+    form.element.trigger("reset"); // reset form values
     $(form.element).find('input[type="hidden"]').attr("value", ""); // reset all hidden input values
     $(form.element).find('button[type="submit"]').prop("disabled", false); // enable submit button - disabled for no js
     formAddStatusMessages(); // add all form status messages
@@ -103,19 +105,17 @@ var formFunctions = (function functionName(form) {
 
   // show status message on form
   function formShowMessage(messageID) {
-    form.element.addClass('form-message-is-visible'); // set class on entire form for css
-    form.element.find('input, button, select, textarea').prop("disabled", true); // disable all of the form so people cant enter or tab through it
-    form.element.find('a').removeAttr('href'); // remove all links so user cant keyboard nav through them either
-    form.element.find('.message--' + messageID).addClass('is-visible'); // show specific form message
+    form.element.addClass("form-message-is-visible"); // set class on entire form for css
+    form.element.find("input, button, select, textarea").prop("disabled", true); // disable all of the form so people cant enter or tab through it
+    form.element.find("a").removeAttr("href"); // remove all links so user cant keyboard nav through them either
+    form.element.find(".message--" + messageID).addClass("is-visible"); // show specific form message
   }
-
 
   ////////////////////////////////////////////////////// export public functions
 
   return {
     init: formInit,
     showMessage: formShowMessage,
-    submissionInProgress: submissionInProgress,
+    submissionInProgress: submissionInProgress
   };
-
-});
+};
