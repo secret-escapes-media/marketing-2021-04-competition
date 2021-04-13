@@ -32,29 +32,56 @@ var formFunctions = (function functionName(form) {
 
   // apply a class for selected radio or checkbox input
   function formSelectedInputClass() {
-    var inputButtonClass = 'js-input-button';
-    $(form.element).find('.' + inputButtonClass).on('change',function () {
-      var $input = $(this).find('input').not('input[type="hidden"]');
-      var inputType = $input.attr('type');
-      var selectedLabel = $input.closest('.' + inputButtonClass);
-      var selectedClass = 'is-selected';
-      if (inputType === 'checkbox') {
-        // checkbox function
-        if (selectedLabel.hasClass(selectedClass)) {
-          selectedLabel.removeClass(selectedClass);
-        } else {
-          selectedLabel.addClass(selectedClass);
+    var inputButtonClass = "js-input-button";
+    $(form.element)
+      .find("." + inputButtonClass)
+      .on("change", function () {
+        var $input = $(this).find("input").not('input[type="hidden"]');
+        var inputType = $input.attr("type");
+        var selectedLabel = $input.closest("." + inputButtonClass);
+        var selectedClass = "is-selected";
+        if (inputType === "checkbox") {
+          // checkbox function
+          // get the hidden input for this group of checkbox values
+          var valuesEl = $(
+            "input[type='hidden']#" + this.parentElement.dataset.questionId
+          )[0];
+          // make an array to toggle and combine values
+          var valuesArr = [];
+          if (valuesEl.value !== "") valuesArr = valuesEl.value.split(",");
+          // check if value is seclected or not
+          if ($input[0].checked) {
+            // add value to array
+            valuesArr.push($input[0].value);
+          } else {
+            // find value's current position and remove from array
+            for (var i = 0; i < valuesArr.length; i++) {
+              if (valuesArr[i] === $input[0].value) {
+                valuesArr.splice(i, 1);
+                break;
+              }
+            }
+          }
+          // add combined values to element as string
+          valuesEl.value = valuesArr.toString();
+          // switch selected class
+          if (selectedLabel.hasClass(selectedClass)) {
+            selectedLabel.removeClass(selectedClass);
+          } else {
+            selectedLabel.addClass(selectedClass);
+          }
+        } else if (inputType === "radio") {
+          // radio function
+          var radioGroup = $input.closest("." + form.inputClass);
+          // check if it is already selected
+          if (!selectedLabel.hasClass(selectedClass)) {
+            radioGroup
+              .find("." + inputButtonClass + "." + selectedClass)
+              .removeClass(selectedClass);
+            selectedLabel.addClass(selectedClass);
+          }
         }
-      } else if (inputType === 'radio') {
-        // radio function
-        var radioGroup = $input.closest('.' + form.inputClass);
-        // check if it is already selected
-        if (!(selectedLabel.hasClass(selectedClass))) {
-          radioGroup.find('.' + inputButtonClass + '.' + selectedClass).removeClass(selectedClass);
-          selectedLabel.addClass(selectedClass);
-        }
-      }
-    });
+      });
   }
 
 
@@ -67,6 +94,7 @@ var formFunctions = (function functionName(form) {
   function formInit() {
     // setting up the form
     form.element.trigger('reset'); // reset form values
+    $(form.element).find('input[type="hidden"]').attr("value", ""); // reset all hidden input values
     $(form.element).find('button[type="submit"]').prop("disabled", false); // enable submit button - disabled for no js
     formAddStatusMessages(); // add all form status messages
     formSelectedInputClass(); // add function to detect selected radio or checkbox
