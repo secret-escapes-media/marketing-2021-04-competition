@@ -33,3 +33,17 @@
     }
   }
 }
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  margin-top: -0.66rem;
+  margin-left: -0.66rem;
+  & > * {
+    padding-top: 0.66rem;
+    padding-left: 0.66rem;
+  }
+  &__img {
+    max-width: 1.5rem;
+  }
+}
