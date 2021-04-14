@@ -11,9 +11,9 @@ collection:
   - id: berge-seen
     title: Berge & Seen
     link: https://www.secretescapes.de/bergeundseen/filter
-  - id: boutique-hotels
-    title: Boutique-Hotels
-    link: https://www.secretescapes.de/boutiquehotels/filter
+  - id: insel-paradiese
+    title: Insel-Paradiese
+    link: https://www.secretescapes.de/magischeinseln/filter
   - id: mittelmeer-sonne
     title: Mittelmeer-Sonne
     link: https://www.secretescapes.de/mehrurlaub/filter
