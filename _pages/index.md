@@ -5,11 +5,10 @@ nav: true
 nav-order: 5
 nav-title: Win
 
-title: Book any stay, win a luxury Mediterranean holiday
-long-title: Book any stay, win a luxury Mediterranean holiday
+title: Win a sun-soaked luxury Mediterranean holiday - you deserve it!
 enter-cta: Enter Now
 
-intro-title: Win one of four luxury getaways!
+intro-title: Win one of these four luxury getaways!
 
 features:
   - id: kos-diamond-deluxe-hotel
@@ -25,7 +24,7 @@ features:
     title: Will it be charm and opulence in romantic Provence?
     description: Will you be lucky enough to win a 3-night stay at this boutique hotel in the picturesque Provence? If you can tear yourself away from the sublime views overlooking the Luberon Valley, you'll be met with Michelin-star dining options, a blissful spa and hammam, cinema room and outdoor pool.
 
-end-section: For your chance to win one of these incredible holidays, simply book any Secret Escapes deal between April 8th - May 8th and you will automatically be entered into the draw. The four lucky winners will be contacted directly after the competition has ended to find out which prize they have won. Good luck!
+end-section: For your chance to win one of these incredible holidays, simply book any Secret Escapes deal between April 22nd - May 22nd and you will automatically be entered into the draw. The four lucky winners will be contacted directly after the competition has ended to find out which prize they have won. Good luck!
 
 collection:
   - id: spa-getaways
