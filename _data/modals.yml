@@ -1,124 +1,395 @@
-#####################################
-#
-#  OPTIONS
-#
-#    pages:
-#      - id: overview         # (shows on specific page)
-#      - id: all              # (shows on all pages)
-#      - layout: group-page   # (shows on specific layout)
-#
-#   # if option is not set, defaul is standard html content
-#   type:
-#     youtube     # loads in a different thing
-#     series      # this is a parent container that has contents
-#
-#   # when included, an extra html is used for a full width image
-#   image: 'example-image-name.jpg'
-#
-#
-#
-#####################################
-
-
-- id: video
-  type: youtube
-  pages:
-    - id: all
-  youtube-id: Os6R4G4dimY
-
-- id: another
-  pages:
-    - id: all
-  content: >
-    <div class="h h--lg">Another Modal</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-    <p>Quos non sit omnis cum facilis, laborum culpa natus totam quae animi magnam minima aspernatur, harum dolorem nostrum maxime distinctio! Facilis hic exercitationem, blanditiis, saepe iusto minus libero unde amet molestiae, nemo id! Dolores aperiam commodi dolore neque ipsum rerum error, eum. Ratione rem maxime incidunt quam nostrum, voluptas alias soluta accusamus magni quibusdam, tempore numquam! Unde nemo a optio dolore sunt ex repellat molestiae quisquam quas. Fugiat, eligendi ullam. Exercitationem sapiente neque debitis omnis commodi cumque illo magni quam.</p>
-
-- id: image-credits
-  image: img.jpg
-  pages:
-    - id: all
-  content: >
-    <div class="h h--md">Image Credits</div>
-    <ol>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tenetur dolorem quod, perspiciatis explicabo harum doloremque aut eveniet reprehenderit voluptatibus.</li>
-      <li>Cupiditate fugiat voluptatibus molestias soluta perspiciatis deserunt eum officia autem laboriosam, fugit provident harum architecto delectus iure dolores quis corrupti.</li>
-      <li>Adipisci eligendi, ut. Voluptas optio a rerum perferendis eligendi esse minus voluptate consequatur, ullam cupiditate distinctio ad, est, vitae beatae!</li>
-      <li>Odit alias, expedita quis. Quibusdam soluta odit architecto labore. Vel quaerat dignissimos minus accusamus deserunt et, fugit a odit provident!</li>
-      <li>Inventore voluptate, quis quibusdam consectetur excepturi officia ipsum fugit, itaque sapiente, rem, saepe sunt libero ducimus reiciendis officiis nobis et?</li>
-      <li>Minima aperiam fuga voluptate cupiditate commodi sed enim! Dolore qui, accusamus accusantium iste asperiores quidem molestias officiis quia necessitatibus minus.</li>
-      <li>Id illum non atque perspiciatis alias natus, laboriosam nihil dolorum voluptatum libero cum vel ex commodi deserunt debitis maxime sed.</li>
-      <li>Ab cum voluptas hic asperiores accusantium et voluptatem, architecto a saepe modi culpa laudantium, unde eveniet fugiat nobis excepturi molestias?</li>
-    </ol>
-
-- id: poi
-  image: img.jpg
-  pages:
-    - id: all
-  content: >
-    <div class="h h--md">Example POI</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing ept. Non tenetur dolorem quod, perspiciatis exppcabo harum doloremque aut eveniet reprehenderit voluptatibus.</p>
-    <p>Cupiditate fugiat voluptatibus molestias soluta perspiciatis deserunt eum officia autem laboriosam, fugit provident harum architecto delectus iure dolores quis corrupti.</p>
-    <p>Adipisci epgendi, ut. Voluptas optio a rerum perferendis epgendi esse minus voluptate consequatur, ullam cupiditate distinctio ad, est, vitae beatae!</p>
-
-#################################################
-#   academy-gallery
-#################################################
-
-- id: gallery
-  type: series
-  pages:
-    - id: all
-
-  contents:
-
-    - id: whisky-drinks
-      image: img.jpg
-      content: >
-        <div class="h h--lg">He drinks the Whisky drinks</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-
-
-    - id: vodka-drinks
-      image: img.jpg
-      content: >
-        <div class="h h--lg">He drinks the Vodka drinks</div>
-        <p>Voluptatem, inventore culpa nobis esse officiis praesentium fugiat illo deserunt? Inventore perspiciatis accusantium ad quaerat voluptas nostrum, illum magni, quas. Temporibus rerum eveniet quas esse modi veritatis, sequi eaque hic unde consequuntur, nisi maiores officiis odit eligendi nulla non eius cupiditate id tenetur nam. Dicta, excepturi, odio! Rem optio modi, deleniti eligendi, praesentium harum ipsam minus unde, voluptates commodi voluptatem voluptas eveniet reiciendis qui alias. Aut, earum, temporibus. Ut minus atque nemo deleniti possimus vitae rem, ad voluptatibus modi dolorum?</p>
-
-    - id: larger-drinks
-      image: img.jpg
-      content: >
-        <div class="h h--lg">He drinks the Larger drinks</div>
-        <p>Hic, ratione consequuntur tempora error dicta quis minus cumque vero? Repellat facere nam blanditiis nostrum praesentium in tenetur. Sapiente dicta nostrum facilis, repudiandae natus doloribus voluptatibus delectus a distinctio asperiores, quidem quisquam in, officiis aut non tempore incidunt nihil expedita ea! Quibusdam et, eligendi. Aperiam omnis nobis beatae, rem minus, dicta eligendi sequi nisi, quam at expedita mollitia accusamus nostrum quo quisquam ratione, architecto unde eaque assumenda ab maxime minima nemo! Sunt odit qui distinctio voluptatibus. Repellat placeat vitae commodi.</p>
-
-    - id: cider-drinks
-      image: img.jpg
-      content: >
-        <div class="h h--lg">He drinks the Cider drinks</div>
-        <p>Ipsam harum numquam corporis at fugit necessitatibus porro possimus laboriosam odit dolores quaerat nemo veritatis incidunt, totam perspiciatis eaque magnam debitis delectus? Harum fuga quia animi, ipsa in consectetur, quae nostrum dolores sint molestiae sit consequatur odit enim ex optio nisi eveniet expedita accusantium iure commodi illum quidem cum unde dolorem! Expedita aliquam neque, reprehenderit voluptatum perspiciatis facere quod ab laboriosam aperiam. Delectus molestias atque, cumque quae labore nisi eveniet odit! Dolorem, ex hic nisi quam deleniti, et deserunt sapiente!</p>
-
-
-#################################################
-#   Competition
-#################################################
-
 - id: competition-terms
   pages:
     - id: competition
   content: >
-    <div class="content-spacing">
-      <h3 class="h h--lg">Competition terms & conditions</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
-      <p>Quos non sit omnis cum facilis, laborum culpa natus totam quae animi magnam minima aspernatur, harum dolorem nostrum maxime distinctio! Facilis hic exercitationem, blanditiis, saepe iusto minus libero unde amet molestiae, nemo id! Dolores aperiam commodi dolore neque ipsum rerum error, eum. Ratione rem maxime incidunt quam nostrum, voluptas alias soluta accusamus magni quibusdam, tempore numquam! Unde nemo a optio dolore sunt ex repellat molestiae quisquam quas. Fugiat, eligendi ullam. Exercitationem sapiente neque debitis omnis commodi cumque illo magni quam.</p>
+    <div>
+      <h1 class="h h--lg">Allgemeine Geschäftsbedingungen</h1>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Veranstalter Und Teilnehmer</h2>
+      <ol class="continuing-list continuing-list--start">
+        <li>
+          Der Veranstalter ist Secret Escapes Ltd, (eingetragene Nummer 07026107)
+          120 Holborn, London, EC1N 2TD (der „Veranstalter“).
+        </li>
+        <li>
+          Alle Teilnehmer („Teilnehmer“) müssen ihren Wohnsitz in Deutschland haben
+          und mindestens 18 Jahre alt sein.
+        </li>
+        <li>
+          Nicht teilnahmeberechtigt sind Mitarbeiter von Secret Escapes, deren
+          angeschlossenen Unternehmen, Familien, Vertreter und sonstige Parteien,
+          die direkt mit dieser Aktion und dem Sponsoring zu tun haben.
+        </li>
+        <li>
+          Mit der Teilnahme an diesem Gewinnspiel erklären sich alle Teilnehmer mit
+          diesen Bedingungen einverstanden, sofern nicht schriftlich etwas anderes
+          mitgeteilt wird.
+        </li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Das Gewinnspiel</h2>
+      <ol class="continuing-list">
+        <li>
+          Um an diesem Gewinnspiel teilnehmen zu können, müssen die Teilnehmer ihren
+          Namen und ihre E-Mail-Adresse angeben sowie ein Anmeldeformular auf der
+          Aktionsseite der Website des Veranstalters ausfüllen.
+        </li>
+        <li>
+          Die Aktion beginnt am [22.04.2021] um 09:00 Uhr und läuft über einen
+          Zeitraum von einem Monat (der „Aktionszeitraum“). Der Aktionszeitraum darf
+          sich nicht über aufeinanderfolgende Wochen erstrecken. Aufgrund der
+          COVID-19-Pandemie behält sich der Veranstalter das Recht vor, die
+          Teilnahme am Wettbewerb nach eigenem Ermessen für einen bestimmten
+          Zeitraum auszusetzen und den Einsendeschluss entsprechend zu verlängern.
+          Falls dieser Fall eintritt, wird der Veranstalter diesbezüglich
+          detailliertere Angaben und einen aktualisierten Annahmeschluss auf der
+          Gewinnspielseite veröffentlichen. Alle Einsendungen müssen bis spätestens
+          23.59 Uhr (MEZ) am [22.05.2021] oder im Falle von Unterbrechungen aufgrund
+          der COVID-19-Pandemie, zu einem späteren, auf der Gewinnspielseite
+          angegebenen Datum eingehen.
+        </li>
+        <li>
+          Unvollständige, ungültige, unangemessene oder nach Einsendeschluss
+          eingegangene Einsendungen sind nicht gewinnberechtigt.
+        </li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Wie Sie Teilnehmen Können</h2>
+      <ol class="continuing-list">
+        <li>
+          Um an diesem Gewinnspiel teilnehmen zu können, müssen die Teilnehmer ihren
+          Namen und ihre E-Mail-Adresse angeben sowie ein Anmeldeformular auf der
+          Aktionsseite der Website des Veranstalters ausfüllen.
+        </li>
+        <li>Pro Person ist nur eine Einsendung erlaubt.</li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Gewinnspielbedingungen</h2>
+      <ol class="continuing-list">
+        <li>
+          Die Teilnehmer erklären sich damit einverstanden, dass der Veranstalter
+          sie zum Zwecke der Durchführung des Gewinnspiels kontaktiert, auch per
+          E-Mail.
+        </li>
+        <li>
+          <div>
+            <div>
+              Der Veranstalter behält sich das Recht vor, Beiträge zu
+              disqualifizieren, die:
+              <ol class="ol--no-space ol--letters">
+                <li>
+                  auf Buchungen basieren, die nachträglich storniert werden und
+                  unredlich vorgenommen wurden;
+                </li>
+                <li>unvollständig oder unleserlich sind; oder</li>
+                <li>die Anforderungen aus anderen Gründen nicht erfüllen.</li>
+              </ol>
+            </div>
+          </div>
+        </li>
+        <li>
+          Der Gewinner erklärt sich damit einverstanden, dass der Veranstalter den
+          Namen und die Kontaktdaten des Gewinners an das jeweilige Hotel
+          weitergibt, das den Preis zur Verfügung stellt, damit es den Gewinner bei
+          der Kontaktaufnahme mit dem Hotel verifizieren kann.
+        </li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Der Preis</h2>
+      <ol class="continuing-list">
+        <li>
+          <div>
+            <div>
+              Die folgenden Preise stehen zur Verfügung:
+              <ol class="ol--no-space ol--letters">
+                <li>
+                  <div>
+                    <p>
+                      4 einzelne Teilnehmer gewinnen einen Hotelaufenthalt in einem
+                      der folgenden, ihnen vom Veranstalter zugewiesenen Hotels:
+                    </p>
+                    <div style="padding-left: 0.8rem; padding-top: 1.25rem">
+                      <p>
+                        3 Übernachtungen im Mons Silva Chalet, Italien für 2
+                        Personen
+                      </p>
+                      <div style="padding-left: 0.8rem; padding-top: 0.4rem">
+                        <p>(i) Romantik-Chalet</p>
+                        <p>
+                          (ii) Begrüßungsgetränk, Zutritt zur 2.000 m² großen
+                          Tyrol-Wellnessoase, Gutschein über 20 € für
+                          Beautybehandlungen (buchbar von 9.00 bis 14.00 Uhr, nicht
+                          übertragbar), frisches Quellwasser aus eigener Quelle im
+                          gesamten Hotel, kostenloses Buffet um 12.30 Uhr, Nutzung
+                          der Therme am Morgen der Abreise (alles jeweils pro
+                          Person, pro Tag), Vollpension: Frühstücksbuffet von 7.30 -
+                          11.00 Uhr, täglich kleines Mittagsbuffet im Alphotel Tyrol
+                          bis 16.00 Uhr, Abendessen ohne Getränke (alles jeweils pro
+                          Person, pro Tag)
+                        </p>
+                        <p>
+                          (iii) Der Aufenthalt gilt vom 7.5.2021 bis 9.4.2022
+                          (Aufenthalt je nach Verfügbarkeit). Nicht verfügbar sind
+                          die folgenden Zeiträume: 16.6.2021 bis 19.6.2021 +
+                          9.7.2021 bis 27.8.2021 + 10.10.2021 bis 15.10.2021 +
+                          15.12.2021 bis 6.1.2022 + 14.2.2022 bis 28.2.2022
+                        </p>
+                        <p>
+                          (iv) Der Aufenthalt muss spätestens bis zum 30.9.2021 beim
+                          Hotel gebucht werden
+                        </p>
+                      </div>
+                    </div>
+                    <div style="padding-left: 0.8rem; padding-top: 1.25rem">
+                      <p>
+                        5 Übernachtungen im Diamond Deluxe Hotel, Kos, Griechenland
+                        für 2 Personen
+                      </p>
+                      <div style="padding-left: 0.8rem; padding-top: 0.4rem">
+                        <p>
+                          (i) Superior Deluxe-Zimmer mit direktem Zugang zum
+                          Swimming Pool
+                        </p>
+                        <p>
+                          (ii) Halbpension (tägliches Frühstücks- und Abendbuffet),
+                          Spezial-Begrüßungsdrink pro Person, pro Aufenthalt,
+                          Flasche Wein und Obst bei Ankunft auf dem Zimmer, 20 %
+                          Ermäßigung im Restaurant Peruzzi (À la carte-Menü,
+                          Ermäßigung gilt nur für Speisen) pro Zimmer, pro
+                          Aufenthalt, 20 % Ermäßigung auf Kurbehandlungen im Mazarin
+                          Spa pro Zimmer, pro Aufenthalt
+                        </p>
+                        <p>
+                          (iii) Der Aufenthalt gilt vom 1.5.2021 bis 31.7.2021 sowie
+                          vom 1.5.2022 bis 31.7.2022 (je nach Verfügbarkeit). Nicht
+                          verfügbar sind der 1.8.2021 bis 31.9.2021 + 1.11.2021 bis
+                          30.4.2022 (Das Hotel ist während dieser Zeiträume
+                          geschlossen)
+                        </p>
+                        <p>
+                          (iv) Der Aufenthalt muss spätestens bis zum 30.9.2021 beim
+                          Hotel gebucht werden
+                        </p>
+                      </div>
+                    </div>
+                    <div style="padding-left: 0.8rem; padding-top: 1.25rem">
+                      <p>
+                        5 Übernachtungen im Aminess Port 9 Hotel, Kroatien für 2
+                        Personen
+                      </p>
+                      <div style="padding-left: 0.8rem; padding-top: 0.4rem">
+                        <p>(i) Junior-Suite</p>
+                        <p>
+                          (ii) Halbpension (tägliches Frühstücks- und Abendbuffet),
+                          Flasche Wein, Sonnenliegen am Swimming Pool
+                        </p>
+                        <p>
+                          (iii) Der Aufenthalt gilt vom 28.5.2021 bis 17.10.2021 und
+                          vom 28.5.2022 bis 17.10.2022 (je nach Verfügbarkeit)
+                        </p>
+                        <p>
+                          (iv) Der Aufenthalt muss spätestens bis zum 30.9.2021 beim
+                          Hotel gebucht werden
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        padding-left: 0.8rem;
+                        padding-top: 1.25rem;
+                        padding-bottom: 1.25rem;
+                      "
+                    >
+                      <p>
+                        3 Übernachtungen in La Bégude Saint Pierre, Frankreich für 2
+                        Personen
+                      </p>
+                      <div style="padding-left: 0.8rem; padding-top: 0.4rem">
+                        <p>(i) Superior-Zimmer</p>
+                        <p>(ii) Tägliches Frühstück</p>
+                        <p>
+                          (iii) Der Aufenthalt gilt vom 13.9.2021 bis 11.9.2022 (je
+                          nach Verfügbarkeit). Nicht verfügbar sind folgende
+                          Zeiträume: 26.5.2022 bis 29.5.2022 + 4.6.2022 bis 6.6.2022
+                          + 1.7.2022 bis 31.8.2022
+                        </p>
+                        <p>
+                          (iv) Der Aufenthalt muss spätestens bis zum 30.9.2021 beim
+                          Hotel gebucht werden
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  Es gibt insgesamt 4 Preise zu gewinnen. Dabei besteht jeder Preis
+                  aus einem Hotelaufenthalt mit jeweils drei oder fünf
+                  Übernachtungen (je nach Hotel) für zwei Personen in einem vom
+                  Veranstalter ausgewählten Hotel.
+                </li>
+                <li>
+                  Der Aufenthalt ist abhängig von der Verfügbarkeit. Buchungen
+                  während der Schulferien und an Feiertagen sind grundsätzlich nicht
+                  möglich;
+                </li>
+                <li>
+                  Der Aufenthalt muss spätestens bis zum 30. September 2021 gebucht
+                  werden.
+                </li>
+                <li>
+                  Die Gewinner müssen sich selbst mit dem jeweiligen Hotel in
+                  Verbindung setzen, um die Buchung zu arrangieren.
+                </li>
+                <li>
+                  Die Reisekosten sind nicht im Preis enthalten und gehen zu Lasten
+                  des Gewinners.
+                </li>
+              </ol>
+            </div>
+            <div>
+              <div>
+                Diese Aufenthalte unterliegen der Verfügbarkeit sowie etwaigen
+                staatlichen Richtlinien/Einschränkungen am ausgewählten Reiseziel
+                (die sich auf die Verfügbarkeit von den jeweiligen Einrichtungen im
+                Hotel auswirken können), sowie den Buchungsbedingungen von Secret
+                Escapes, die Sie unter
+                <a href="https://www.secretescapes.de/agb"
+                  >www.secretescapes.de/agb</a
+                >
+                einsehen können.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div>
+              Für die Gewinner eines Hotelaufenthalts gilt, dass die jeweiligen
+              Aufenthalte bis zu den bei den jeweiligen Hotels angegebenen Daten
+              abgeschlossen sein müssen. Für den Fall, dass
+              <ol class="ol--no-space ol--letters">
+                <li>
+                  <div>
+                    <div>
+                      Sie aus den folgenden Gründen nicht reisen können:
+                      <ol class="ol--no-space ol--roman">
+                        <li>Erkrankung mit COVID-19;</li>
+                        <li>
+                          Sie müssen sich aufgrund behördlicher Richtlinien selbst
+                          isolieren; oder
+                        </li>
+                        <li>
+                          Sie haben Ihren Wohnsitz in einem Gebiet, das staatlichen
+                          Beschränkungen zur COVID-19-Pandemiebekämpfung unterliegt
+                          und aus dem Reisen nicht gestattet sind;<br />oder
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  das von Ihnen gewählte Hotel ist geschlossen oder Reisen in dessen
+                  Umgebung sind aufgrund von Regierungsbeschränkungen im Hinblick
+                  auf die COVID-19-Pandemiebekämpfung nicht gestattet,
+                </li>
+              </ol>
+            </div>
+            <div>
+              muss jeder Gewinner mit dem entsprechenden Hotel schnellstmöglich
+              einen alternativen Aufenthaltstermin vereinbaren, nachdem jene
+              Umstände nicht mehr gegeben sind. Jegliche Änderung der Daten oder
+              Stornierung der Buchung liegt im Ermessen des jeweiligen Hotels.
+            </div>
+          </div>
+        </li>
+        <li>
+          Der Veranstalter behält sich das Recht vor, den Namen, Ort und Landkreis
+          des Gewinners zu veröffentlichen oder eine Preisverleihung nach dem Datum
+          der Verlosung öffentlich bekannt zu geben. Falls der Gewinner es nicht
+          wünscht, dass jene Details veröffentlicht werden, so muss er dies dem
+          Veranstalter zum Zeitpunkt der Benachrichtigung über seinen Gewinn
+          mitteilen.
+        </li>
+        <li>
+          Die Preise sind nicht übertragbar und können nicht in bar ausgezahlt
+          werden. Falls die angebotenen Preise aufgrund von Umständen außerhalb
+          unserer Kontrolle nicht verfügbar sind, behält sich der Veranstalter das
+          Recht vor, einen alternativen Preis von gleichem oder höherem Wert
+          anzubieten.
+        </li>
+        <li>
+          Der Gewinner muss den Preis spätestens 7 Tage nach Benachrichtigung des
+          Gewinners einfordern.
+        </li>
+        <li>
+          Für den Fall, dass der Gewinner den Preis ablehnt oder es versäumt, ihn
+          gemäß Abschnitt 17 rechtzeitig einzufordern, kann der Preis nach dem
+          absoluten und alleinigen Ermessen des Veranstalters an andere Teilnehmer
+          vergeben werden.
+        </li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Auswahl</h2>
+      <ol class="continuing-list">
+        <li>
+          Der Gewinner wird am Ende des Gewinnspiels von Secret Escapes aus allen
+          Einsendungen, die während des Aktionszeitraums von Kunden in Deutschland
+          eingegangen sind, nach dem Zufallsprinzip ausgelost.
+        </li>
+        <li>
+          Der Gewinner wird von Secret Escapes per E-Mail an dessen E-Mail-Adresse
+          kontaktiert und über die nächsten Schritte zur Inanspruchnahme des Preises
+          informiert.
+        </li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Haftungsausschluss</h2>
+      <ol class="continuing-list">
+        <li>
+          Der Veranstalter behält sich das Recht vor, eine Einsendung abzulehnen
+          oder den vollen Wert eines Preises zurückzufordern, falls er der Meinung
+          ist, dass ein Missbrauch oder Verstoß gegen die Bedingungen dieser Aktion
+          vorliegt.
+        </li>
+        <li>
+          Der Veranstalter haftet nicht für etwaige Verluste, Schäden oder
+          Verletzungen jeglicher Art, die ein Teilnehmer im Rahmen dieser Aktion
+          erleidet. Nichts in diesen Regeln führt jedoch zu einer Einschränkung oder
+          einem Ausschluss der Haftung des Veranstalters für Personenschäden oder
+          Tod, die durch die nachgewiesene Fahrlässigkeit seiner Mitarbeiter oder
+          Auftragnehmer verursacht wurden.
+        </li>
+        <li>
+          Bei Streitigkeiten über die Auslegung oder der Umsetzung jener
+          Bestimmungen in Bezug auf das Gewinnspiel ist die Entscheidung der
+          Geschäftsführung des Veranstalters endgültig und es wird diesbezüglich
+          keine Korrespondenz geführt.
+        </li>
+        <li>
+          Die Aktion kann zwar auf Facebook und Instagram präsentiert werden, wird
+          jedoch nicht von Facebook und Instagram gesponsert, unterstützt oder
+          verwaltet und ist auch nicht mit Facebook und Instagram verbunden. Mit der
+          Teilnahme an dieser Aktion entbinden alle Teilnehmer Facebook und
+          Instagram von jeglicher Haftung, die sich aus dieser Aktion ergibt. Die
+          Teilnehmer übermitteln Informationen an den Veranstalter und nicht an
+          Facebook und Instagram. Die von den Teilnehmern zur Verfügung gestellten
+          Informationen werden lediglich für die in diesen Bedingungen genannten
+          Zwecke verwendet.
+        </li>
+      </ol>
+      <div class="space--lg"></div>
+      <h2 class="h h--serif h--xs">Datenschutz</h2>
+      <ol class="continuing-list">
+        <li>
+          <div>
+            Alle im Rahmen dieser Aktion erhobenen personenbezogenen Daten werden
+            gemäß der Datenschutzrichtlinie von Secret Escapes behandelt. Eine Kopie
+            dieser Datenschutzrichtlinie können von den Teilnehmern unter
+            <a href="https://www.secretescapes.de/datenschutzerklaerung"
+              >www.secretescapes.de/datenschutzerklaerung</a
+            >
+            eingesehen werden.
+          </div>
+        </li>
+      </ol>
     </div>
