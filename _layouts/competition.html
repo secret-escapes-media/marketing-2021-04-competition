@@ -4,7 +4,7 @@ banner:
   content: >
     <div class="container container--no-padding">
       <div class="width width--xxl text--center">
-        <h1 class="h h--xxl">{{page.title}}</h1>
+        <h1 class="h h--banner">{{page.title}}</h1>
       </div>
     </div>
 ---
@@ -49,7 +49,7 @@ banner:
     <div class="width width--lg text--center">
       <p class="p--xxl">{{page.end-section}}</p>
       <div class="space--sm"></div>
-      <a href="{{site.data.locale[site.locale].core-site}}" class="btn btn--lg btn--orange">Browse Deals</a>
+      <a id="track-end-deals-btn" href="{{site.data.locale[site.locale].core-site}}" class="btn btn--lg btn--orange">Browse Deals</a>
       <p class="p--sm"><a href="#" class="js-open-modal text--link" data-open-modal="competition-terms">T&Cs apply</a></p>
     </div>
   </div>
@@ -67,7 +67,7 @@ banner:
             class="img img--1-1 rounded rounded--lg bg--grey-dark"
             style="background-image: url('{{site.img}}/collections/{{item.id}}.jpg');"
           >
-            <a href="{{item.link}}" class="img__link"></a>
+            <a id="track-end-collection-{{item.id}}" href="{{item.link}}" class="img__link"></a>
             <div class="img__content">
               <h3 class="h h--sm">{{item.title}}</h3>
             </div>

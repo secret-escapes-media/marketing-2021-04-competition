@@ -50,6 +50,7 @@
   line-height: 1.1;
   font-weight: 700;
   font-size: $s5;
+  @include bp($sm){ font-size: $s6; }
   @include bp($md){ font-size: $s7; }
-  @include bp($xl){ font-size: $s10; }
+  @include bp($xl){ font-size: $s8; }
 }
