@@ -15,7 +15,7 @@ var formValidation = (function functionName(form) {
     'checkbox': 'Please select an answer for this question',
     'select': 'Please select an option from this list',
     'textarea': 'Please fill in a response over 100 characters',
-    'compInvalid': 'Sorry, but you must meet this requirement to enter the competition'
+    'compInvalid': 'Sie müssen über 21 Jahre alt sein, um teilnehmen zu dürfen.'
   };
 
 

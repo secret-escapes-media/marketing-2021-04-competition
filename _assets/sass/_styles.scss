@@ -47,3 +47,14 @@
     max-width: 1.5rem;
   }
 }
+
+.break-words {
+  word-break: break-word;
+  *:before,
+  *:after {
+    word-break: normal;
+  }
+  @include bp($lg){
+    word-break: normal;
+  }
+}

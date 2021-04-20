@@ -10,7 +10,7 @@
         <h1 class="h h--lg">{{page.title}}</h1>
         <p class="p--xxl">{{page.intro}}</p>
         <div class="space--sm"></div>
-        <a href="{{site.data.locale[site.locale].core-site}}" class="btn">Alle Angebote Sehen</a>
+        <a id="track-entered-deals-btn" href="{{site.data.locale[site.locale].core-site}}" class="btn">Alle Angebote Sehen</a>
       </div>
     </div>
     <div>
@@ -26,7 +26,7 @@
               class="img img--1-1 rounded rounded--lg bg--grey-dark"
               style="background-image: url('{{site.img}}/collections/{{item.id}}.jpg');"
             >
-              <a href="{{item.link}}" class="img__link"></a>
+              <a id="track-entered-collection-{{item.id}}" href="{{item.link}}" class="img__link"></a>
               <div class="img__content">
                 <h3 class="h h--md">{{item.title}}</h3>
               </div>

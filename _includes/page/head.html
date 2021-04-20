@@ -8,7 +8,7 @@
   {% endif %}
 
   <!-- page meta title -->
-  {% assign meta-title = page.title | append: ' | ' | append: site.title | remove: '&shy;' | replace: '&nbsp;', ' ' %}
+  {% assign meta-title = page.title | remove: '&shy;' | replace: '&nbsp;', ' ' %}
 
   <!-- social image -->
   {% assign social-image-url = site.url | append: site.img | append: '/thumbnail/social.jpg' %}
@@ -43,6 +43,5 @@
   <link rel="stylesheet" href="{{site.css}}/main.css">
   {% if page.extra-css or layout.extra-css %}<link rel="stylesheet" href="{{site.css}}/{{page.id}}.css">{% endif %}
   <script src="{{site.js}}/main.js"></script>
-  {% if page.extra-js %}<script src="{{site.js}}/{{page.id}}.js"></script>{% endif %}
   {% if page.extra-js or layout.extra-js %}<script src="{{site.js}}/{{page.id}}.js"></script>{% endif %}
 </head>

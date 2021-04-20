@@ -2,14 +2,16 @@
   pages:
     - id: competition
   content: >
-    <div>
+    <div class="break-words">
       <h1 class="h h--lg">Allgemeine Geschäftsbedingungen</h1>
       <div class="space--lg"></div>
       <h2 class="h h--serif h--xs">Veranstalter Und Teilnehmer</h2>
       <ol class="continuing-list continuing-list--start">
         <li>
-          Der Veranstalter ist Secret Escapes Ltd, (eingetragene Nummer 07026107)
-          120 Holborn, London, EC1N 2TD (der „Veranstalter“).
+          <div>
+            Der Veranstalter ist Secret Escapes Ltd, (eingetragene Nummer 07026107)
+            120 Holborn, London, EC1N 2TD (der „Veranstalter“).
+          </div>
         </li>
         <li>
           Alle Teilnehmer („Teilnehmer“) müssen ihren Wohnsitz in Deutschland haben
