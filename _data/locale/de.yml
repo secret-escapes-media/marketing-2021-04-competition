@@ -1,6 +1,3 @@
-
-
-
 core-site: https://www.secretescapes.de/aktuelle-angebote
 in-partnership: In Zusammenarbeit mit
 
@@ -14,7 +11,7 @@ header:
       label: Gutscheine
   favourites:
     link: https://www.secretescapes.de/meine-favoriten
-    label: Mine Favoriten
+    label: Meine Favoriten
 
 footer:
   social:
@@ -65,6 +62,3 @@ footer:
         label: Zahlungsinformationen
       - link: https://www.secretescapes.de/agb
         label: AGB
-
-
-
