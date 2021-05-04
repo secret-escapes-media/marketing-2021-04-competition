@@ -53,7 +53,7 @@ competition-form:
           value: "yes"
     - id: qualify
       type: radio
-      label: Sind Sie deutscher Staatsbürger und über 21 Jahre alt?
+      label: Sind Sie ansässig in Deutschland und über 18 Jahre alt?
       required: true
       options:
         - id: qualify-true
