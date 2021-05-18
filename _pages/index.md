@@ -34,7 +34,7 @@ features:
 competition-form:
   id: comp
   post-url: https://dislack.com/send/60741b2ea339896a2c5bac94
-  expiry-date: 2050-01-01
+  expiry-date: 2021-05-24
   fields:
     - id: name
       type: text
