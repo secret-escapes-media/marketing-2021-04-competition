@@ -1,11 +1,10 @@
 ---
 layout: entered
 id: entered
-permalink: /entered/
+permalink: /
 nav: false
 
-title: Danke für die Teilnahme
-intro: Sie haben erfolgreich an der Auslosung teilgenommen. Die glücklichen Gewinner werden von uns direkt benachrichtigt. Viel Glück!
+title: Danke für Ihr Interesse. Die Verlosung ist nun zu Ende; die Gewinner werden direkt benachrichtigt.
 
 collection:
   - id: berge-seen
