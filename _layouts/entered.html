@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include page/head.html %}
 
   <body class="no-js">
-
     {% include components/tracking.html %}
 
     <div class="container">
-      <div class="width width--md vpad--xxl text--center">
-        <h1 class="h h--lg">{{page.title}}</h1>
-        <div class="space--xxs"></div>
-        <p class="p--xxl">{{page.intro}}</p>
-        <div class="space--md"></div>
-        <a href="{{site.data.locale[site.locale].core-site}}" class="btn btn--orange">{{page.cta.text}}</a>
+      <div class="width width--xl vpad--xxl text--center">
+        <h1 class="h h--md">{{page.title}}</h1>
+        <div class="space--sm"></div>
+        <a id="track-entered-deals-btn" href="{{site.data.locale[site.locale].core-site}}" class="btn">Browse Deals</a>
       </div>
     </div>
-
+    <div>
+      <div class="container container--xl">
+        <h2 class="h h--xs text--center width" style="max-width: 36rem">
+          For inspiration on your next trip, browse our collections of amazing refundable deals below.
+        </h2>
+        <div class="space--lg"></div>
+        <div class="row row--md-6-6 row--gutters-sm">
+          {% for item in page.collection %}
+          <div class="col">
+            <div
+              class="img img--1-1 rounded rounded--lg bg--grey-dark"
+              style="background-image: url('{{site.img}}/collections/{{item.id}}.jpg');"
+            >
+              <a id="track-entered-collection-{{item.id}}" href="{{item.link}}" class="img__link"></a>
+              <div class="img__content">
+                <h3 class="h h--md">{{item.title}}</h3>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="space--xxxl"></div>
+    <div class="space--xl"></div>
   </body>
-
 </html>
